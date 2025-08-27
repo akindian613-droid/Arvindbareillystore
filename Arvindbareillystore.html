@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arvind Bareilly Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Arvind Bareilly Store</h1>
+        <div class="cart-icon">🛒 <span id="cart-count">0</span></div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Categories</h2>
+            <ul id="category-list">
+                <li class="active" data-category="all">All</li>
+                <li data-category="electronics">Electronics</li>
+                <li data-category="clothing">Clothing</li>
+                <li data-category="books">Books</li>
+            </ul>
+        </aside>
+
+        <main class="product-grid" id="product-grid">
+            </main>
+    </div>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: ₹<span id="cart-total">0</span></p>
+            <button id="checkout-btn">Checkout on WhatsApp</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
